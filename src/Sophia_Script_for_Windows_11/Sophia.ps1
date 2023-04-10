@@ -1,4 +1,4 @@
-﻿<#
+<#
 	.SYNOPSIS
 	Default preset file for "Sophia Script for Windows 11"
 
@@ -197,11 +197,11 @@ WindowsWelcomeExperience -Hide
 
 # Get tips and suggestions when I use Windows (default value)
 # Получать советы и предложения при использованию Windows (значение по умолчанию)
-WindowsTips -Enable
+# WindowsTips -Enable
 
 # Do not get tips and suggestions when I use Windows
 # Не получать советы и предложения при использованию Windows
-# WindowsTips -Disable
+WindowsTips -Disable
 
 # Hide from me suggested content in the Settings app
 # Скрывать рекомендуемое содержимое в приложении "Параметры"
@@ -311,11 +311,11 @@ OneDriveFileExplorerAd -Hide
 
 # When I snap a window, do not show what I can snap next to it
 # При прикреплении окна не показывать, что можно прикрепить рядом с ним
-SnapAssist -Disable
+# SnapAssist -Disable
 
 # When I snap a window, show what I can snap next to it (default value)
 # При прикреплении окна показывать, что можно прикрепить рядом с ним (значение по умолчанию)
-# SnapAssist -Enable
+SnapAssist -Enable
 
 # Show the file transfer dialog box in the detailed mode
 # Отображать диалоговое окно передачи файлов в развернутом виде
@@ -351,11 +351,11 @@ QuickAccessFrequentFolders -Hide
 
 # Set the taskbar alignment to the center (default value)
 # Установить выравнивание панели задач по центру (значение по умолчанию)
-TaskbarAlignment -Center
+# TaskbarAlignment -Center
 
 # Set the taskbar alignment to the left
 # Установить выравнивание панели задач по левому краю
-# TaskbarAlignment -Left
+TaskbarAlignment -Left
 
 # Hide the search on the taskbar
 # Скрыть поле или значок поиска на панели задач
@@ -479,19 +479,19 @@ AppsLanguageSwitch -Enable
 
 # When I grab a windows's title bar and shake it, minimize all other windows
 # При захвате заголовка окна и встряхивании сворачиваются все остальные окна
-AeroShaking -Enable
+# AeroShaking -Enable
 
 # When I grab a windows's title bar and shake it, don't minimize all other windows (default value)
 # При захвате заголовка окна и встряхивании не сворачиваются все остальные окна (значение по умолчанию)
-# AeroShaking -Disable
+AeroShaking -Disable
 
 # Download and install free dark "Windows 11 Cursors Concept v2" cursors from Jepri Creations
 # Скачать и установить бесплатные темные курсоры "Windows 11 Cursors Concept v2" от Jepri Creations
-Cursors -Dark
+# Cursors -Dark
 
 # Download and install free light "Windows 11 Cursors Concept v2" cursors from Jepri Creations
 # Скачать и установить бесплатные светлые курсоры "Windows 11 Cursors Concept v2" от Jepri Creations
-# Cursors -Light
+Cursors -Light
 
 # Set default cursors (default value)
 # Установить курсоры по умолчанию (значение по умолчанию)
@@ -517,7 +517,7 @@ NavigationPaneExpand -Disable
 #region OneDrive
 # Uninstall OneDrive. The OneDrive user folder won't be removed
 # Удалить OneDrive. Папка пользователя OneDrive не будет удалена
-# OneDrive -Uninstall
+OneDrive -Uninstall
 
 # Install OneDrive 64-bit (default value)
 # Установить OneDrive 64-бит (значение по умолчанию)
@@ -767,11 +767,11 @@ LatestInstalled.NET -Enable
 	Функция будет применена только в случае, если в пресете настроено удаление приложения OneDrive или приложение уже удалено,
 	иначе в OneDrive ломается функционал резервного копирования для папок "Рабочий стол" и "Изображения"
 #>
-WinPrtScrFolder -Desktop
+# WinPrtScrFolder -Desktop
 
 # Save screenshots by pressing Win+PrtScr in the Pictures folder (default value)
 # Cохранять скриншоты по нажатию Win+PrtScr в папку "Изображения" (значение по умолчанию)
-# WinPrtScrFolder -Default
+WinPrtScrFolder -Default
 
 <#
 	Run troubleshooter automatically, then notify me
@@ -959,13 +959,13 @@ SATADrivesRemovableMedia -Disable
 	Установить подсистему Windows для Linux (WSL), последний пакет обновления ядра Linux и дистрибутив Linux, используя всплывающую форму
 	Параметр "При обновлении Windows получать обновления для других продуктов Майкрософт" будет включен автоматически в Центре обновлении Windows, чтобы получать обновления ядра
 #>
-# Install-WSL
+Install-WSL
 #endregion WSL
 
 #region Start menu
 # Unpin all Start apps
 # Открепить все приложения от начального экрана
-# UnpinAllStartApps
+UnpinAllStartApps
 
 # Show default Start layout (default value)
 # Отображать стандартный макет начального экрана (значение по умолчанию)
@@ -973,7 +973,7 @@ SATADrivesRemovableMedia -Disable
 
 # Show more pins on Start
 # Отображать больше закреплений на начальном экране
-StartLayout -ShowMorePins
+# StartLayout -ShowMorePins
 
 # Show more recommendations on Start
 # Отображать больше рекомендаций на начальном экране
@@ -1223,7 +1223,7 @@ SaveZoneInformation -Disable
 
 # Enable Windows Sandbox
 # Включить Windows Sandbox
-# WindowsSandbox -Enable
+WindowsSandbox -Enable
 
 # Disable Windows Sandbox (default value)
 # Выключить Windows Sandbox (значение по умолчанию)
@@ -1236,7 +1236,7 @@ SaveZoneInformation -Disable
 	Включить DNS-over-HTTPS для IPv4
 	Действительные IPv4-адреса: 1.0.0.1, 1.1.1.1, 149.112.112.112, 8.8.4.4, 8.8.8.8, 9.9.9.9
 #>
-DNSoverHTTPS -Enable -PrimaryDNS 1.0.0.1 -SecondaryDNS 1.1.1.1
+# DNSoverHTTPS -Enable -PrimaryDNS 1.0.0.1 -SecondaryDNS 1.1.1.1
 
 # Disable DNS-over-HTTPS for IPv4 (default value)
 # Выключить DNS-over-HTTPS для IPv4 (значение по умолчанию)
@@ -1358,11 +1358,11 @@ OpenWindowsTerminalContext -Show
 
 # Open Windows Terminal in context menu as administrator by default
 # Открывать Windows Terminal из контекстного меню от имени администратора по умолчанию
-OpenWindowsTerminalAdminContext -Enable
+# OpenWindowsTerminalAdminContext -Enable
 
 # Do not open Windows Terminal in context menu as administrator by default (default value)
 # Не открывать Windows Terminal из контекстного меню от имени администратора по умолчанию (значение по умолчанию)
-# OpenWindowsTerminalAdminContext -Disable
+OpenWindowsTerminalAdminContext -Disable
 
 # Disable the Windows 10 context menu style (default value)
 # Отключить стиль контекстного меню из Windows 10 (значение по умолчанию)
